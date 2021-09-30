@@ -76,10 +76,10 @@ TEST(PointPillars, __build_model__) {
   float* points_array;
   int in_num_points;
   in_num_points = Txt2Arrary(points_array,file_name,5);
- 
+    printf("points_array[0]: %f, points_array[1]: %f, points_array[2]: %f points_array[3]: %f, points_array[4]: %f points_array[5]: %f", *points_array, *points_array++, *points_array++, *points_array++, *points_array++, *points_array++);
 
   
-  for (int _ = 0 ; _ < 10 ; _++)
+  for (int _ = 0 ; _ < 1 ; _++) // 10 originally
   {
 
     std::vector<float> out_detections;
